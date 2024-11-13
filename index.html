@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des envois pour les campus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Gestion des envois par campus</h2>
+
+    <h3>Campus Principaux</h3>
+    <div class="campus-capsules">
+        <span class="campus" onclick="toggleCampus(this)">Bordeaux</span>
+        <span class="campus" onclick="toggleCampus(this)">Lille</span>
+        <span class="campus" onclick="toggleCampus(this)">Lyon</span>
+        <span class="campus" onclick="toggleCampus(this)">Marseille</span>
+        <span class="campus" onclick="toggleCampus(this)">Montpellier</span>
+        <span class="campus" onclick="toggleCampus(this)">Nancy</span>
+        <span class="campus" onclick="toggleCampus(this)">Nantes</span>
+        <span class="campus" onclick="toggleCampus(this)">Nice</span>
+        <span class="campus" onclick="toggleCampus(this)">Paris</span>
+        <span class="campus" onclick="toggleCampus(this)">Rennes</span>
+        <span class="campus" onclick="toggleCampus(this)">Strasbourg</span>
+        <span class="campus" onclick="toggleCampus(this)">Toulouse</span>
+    </div>
+
+    <h3>Autres Campus</h3>
+    <div class="campus-capsules">
+        <span class="campus" onclick="toggleCampus(this)">Cotonou</span>
+        <span class="campus" onclick="toggleCampus(this)">Moulins</span>
+        <span class="campus" onclick="toggleCampus(this)">Mulhouse</span>
+        <span class="campus" onclick="toggleCampus(this)">Saint-André</span>
+    </div>
+
+    <button class="reset-button" onclick="resetChecks()">Réinitialiser</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
