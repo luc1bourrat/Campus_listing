@@ -11,7 +11,9 @@
 <div class="container">
     <h2>Les campus</h2>
 
-    <h3>Campus Principaux</h3>
+    <h3 class="copy-trigger" onclick="copyEmails()" title="Cliquez pour copier les emails DPR">
+        Campus Principaux
+    </h3>
     <div class="campus-capsules">
         <span class="campus" onclick="toggleCampus(this)">Bordeaux</span>
         <span class="campus" onclick="toggleCampus(this)">Lille</span>
@@ -26,7 +28,8 @@
         <span class="campus" onclick="toggleCampus(this)">Strasbourg</span>
         <span class="campus" onclick="toggleCampus(this)">Toulouse</span>
     </div>
-
+      
+    
     <h3>Autres Campus</h3>
     <div class="campus-capsules">
         <span class="campus" onclick="toggleCampus(this)">Cotonou</span>
@@ -36,7 +39,6 @@
     </div>
 
     <button class="reset-button" onclick="resetChecks()">Réinitialiser</button>
-    <button class="copy-button" onclick="copyEmails()">Copier les emails</button>
 
 </div>
 

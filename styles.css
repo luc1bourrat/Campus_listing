@@ -23,6 +23,24 @@ h2, h3 {
     font-size: 1.5em;
     color: #333;
     text-align: center;
+    padding: 2px;
+}
+
+/* Ajout de la classe copy-trigger pour le titre interactif */
+.copy-trigger {
+    /* Pas de style spécifique ici, on se base sur le style par défaut et le title */
+}
+
+/* Style au hover pour le titre avec classe copy-trigger */
+.copy-trigger:hover {
+    display: block;
+    width: 100%;
+    background-color: #33a7dd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 /* Capsule de campus */
@@ -48,8 +66,33 @@ h2, h3 {
     color: #fff;
 }
 
-/* Bouton de réinitialisation */
+/* Bouton de réinitialisation (version alertante en bleu) */
 .reset-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0073a8; /* Bleu plus sombre */
+    color: white;
+    border: 2px dashed #005880; /* Bordure pointillée dans un bleu encore plus foncé */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 60px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+.reset-button:hover {
+    background-color: #005880;
+}
+
+/* Bouton de copie des emails */
+.copy-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -59,27 +102,10 @@ h2, h3 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    margin-top: 20px;
-}
-
-.reset-button:hover {
-    background-color: #33a7dd;
-}
-
-/* Bouton de copie des emails */
-.copy-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
     margin-top: 10px;
 }
 
 .copy-button:hover {
-    background-color: #218838;
+    background-color: #33a7dd;
 }
+ 
